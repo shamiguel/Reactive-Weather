@@ -12,7 +12,7 @@ function App() {
             <h3 className = "subtitle">Up to the minute weather news</h3>
             <div className = "app">
                 {
-                    cities.map((cityData) => <WeatherCard data={cityData}/>)
+                    cities.map((cityData, index) => <WeatherCard key={index} data={cityData}/>)
                 }
                 
             </div>
